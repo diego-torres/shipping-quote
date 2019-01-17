@@ -14,6 +14,8 @@ public class Shipment implements java.io.Serializable {
 	private java.lang.Integer distance;
 	private java.lang.Boolean usesCustoms;
 
+	private java.lang.Integer price;
+
 	public Shipment() {
 	}
 
@@ -57,14 +59,23 @@ public class Shipment implements java.io.Serializable {
 		this.usesCustoms = usesCustoms;
 	}
 
+	public java.lang.Integer getPrice() {
+		return this.price;
+	}
+
+	public void setPrice(java.lang.Integer price) {
+		this.price = price;
+	}
+
 	public Shipment(java.lang.Integer id, java.lang.String from,
 			java.lang.String to, java.lang.Integer distance,
-			java.lang.Boolean usesCustoms) {
+			java.lang.Boolean usesCustoms, java.lang.Integer price) {
 		this.id = id;
 		this.from = from;
 		this.to = to;
 		this.distance = distance;
 		this.usesCustoms = usesCustoms;
+		this.price = price;
 	}
 
 }
