@@ -67,31 +67,4 @@ public class Shipment implements java.io.Serializable {
 		this.usesCustoms = usesCustoms;
 	}
 
-	@Override
-	public String toString() {
-		return "{" +
-			" id='" + getId() + "'" +
-			", from='" + getFrom() + "'" +
-			", to='" + getTo() + "'" +
-			", distance='" + getDistance() + "'" +
-			", usesCustoms='" + getUsesCustoms() + "'" +
-			"}";
-	}
-
-	@Override
-	public boolean equals(Object o) {
-		if (o == this)
-			return true;
-		if (!(o instanceof Shipment)) {
-			return false;
-		}
-		Shipment shipment = (Shipment) o;
-		return Objects.equals(id, shipment.id) && Objects.equals(from, shipment.from) && Objects.equals(to, shipment.to) && Objects.equals(distance, shipment.distance) && Objects.equals(usesCustoms, shipment.usesCustoms);
-	}
-
-	@Override
-	public int hashCode() {
-		return Objects.hash(id, from, to, distance, usesCustoms);
-	}
-
 }
