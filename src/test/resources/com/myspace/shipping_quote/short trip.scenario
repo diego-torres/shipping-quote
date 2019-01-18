@@ -16,17 +16,17 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>7</executionTimeResult>
+      <executionTimeResult>9</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>price</fieldName>
-          <expected>150</expected>
-          <actualResult>150</actualResult>
+          <expected>140</expected>
+          <actualResult>140</actualResult>
           <successResult>true</successResult>
-          <explanation>[shipment] field [price] was [150].</explanation>
+          <explanation>[shipment] field [price] was [140].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -35,7 +35,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2019-01-18 11:11:09.604 UTC</lastRunResult>
+  <lastRunResult>2019-01-18 11:13:16.646 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myspace.shipping_quote</packageName>
